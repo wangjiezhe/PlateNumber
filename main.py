@@ -78,7 +78,7 @@ def main():
     #         print(res)
 
     print("伪素数表：")
-    res = Counter(chain.from_iterable(pseudoprime_numbers(i) for i in range(2, 2000)))
+    res = Counter(chain.from_iterable(pseudoprime_numbers(i) for i in range(2, 3600)))
     pprint(res.most_common())
 
     res = list(carmichael_numbers())
